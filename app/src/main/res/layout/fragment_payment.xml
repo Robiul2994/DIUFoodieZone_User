@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.order.PaymentFragment"
+    android:orientation="vertical"
+    android:background="@color/whiteX">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight=".2"
+            android:background="@color/tia"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-2dp"
+            app:cardBackgroundColor="@color/tia"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeWidth="0dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="-2dp"
+            android:layout_weight=".2"
+            android:background="@color/tia"
+            android:translationZ="-1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-2dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/tia"
+            app:strokeWidth="5dp"            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="2"
+                android:textColor="@color/tia"
+                android:textSize="20sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="-2dp"
+            android:layout_weight=".2"
+            android:background="@color/white"
+            android:translationZ="-1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-2dp"
+            app:cardBackgroundColor="@color/whiteX"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="3"
+                android:textColor="@color/tia"
+                android:textSize="20sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="-2dp"
+            android:layout_weight=".2"
+            android:background="@color/white"
+            android:translationZ="-1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card3"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Payment Method:"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/tia"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <com.jem.fliptabs.FlipTab
+            android:id="@+id/flipTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:borderWidth="4dp"
+            app:flipAnimationDuration="400"
+            app:highlightColor="@color/whiteX"
+            app:leftTabText="Bkash"
+            app:overallColor="@color/tia"
+            app:removeDefaultPadding="false"
+            app:rightTabText="1Card"
+            app:startingTab="left"
+            app:textColor="@color/whiteX"
+            app:wobbleAngle="3"
+            app:wobbleReturnAnimationDuration="200"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bkashPaymentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:visibility="visible"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Payment Holder"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@color/tia"
+                    android:paddingVertical="5dp"
+                    />
+                <TextView
+                    android:id="@+id/shopNm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/tia"
+                    android:textSize="24sp"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Bkash No."
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@color/tia"
+                    android:paddingVertical="5dp"
+                    />
+                <TextView
+                    android:id="@+id/shopBkashNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/tia"
+                    android:textSize="24sp"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginEnd="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="Amount"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:background="@color/tia"
+                        android:paddingVertical="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:text="@string/taha"
+                            android:layout_marginEnd="3dp"
+                            android:textColor="@color/tia"
+                            android:textSize="20sp"
+                            android:layout_marginVertical="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:textColor="@color/tia"
+                            android:textSize="24sp"
+                            android:layout_marginVertical="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/white"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="Type"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:background="@color/tia"
+                        android:paddingVertical="5dp"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/paymentType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:textColor="@color/tia"
+                            android:textSize="22sp"
+                            android:layout_marginVertical="10dp"
+                            android:gravity="center"
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Your Bkash No."
+            app:boxBackgroundColor="@color/whiteX"
+            app:boxStrokeColor="?colorPrimary"
+            app:boxStrokeWidth="2dp"
+            app:placeholderText="01xxx-xxxxxx"
+            app:placeholderTextColor="@color/grayX"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pnNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:textColor="@color/grayX" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="N.B.: Pay the amount using Bkash App"
+            android:textColor="@color/tia"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginVertical="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oneCardPaymentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:visibility="gone"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Payment Holder"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@color/tia"
+                    android:paddingVertical="5dp"
+                    />
+                <TextView
+                    android:id="@+id/shopNm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/tia"
+                    android:textSize="24sp"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="1Card Payment QR Code"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@color/tia"
+                    android:paddingVertical="5dp"
+                    />
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/tia"
+                    android:layout_gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/qr"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/logo"
+                        />
+
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="N.B.: Scan the QR Code using 1Card App to make payment"
+            android:textColor="@color/tia"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="40dp"
+            android:gravity="center"
+            android:layout_marginVertical="15dp"/>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/btnPaymentDone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_tia_bg"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:focusable="true"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:text="Mark As Paid"
+            android:textColor="@color/whiteX"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:indicatorColor="@color/tia"
+            app:indicatorInset="20dp"
+            app:indicatorSize="100dp"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:trackCornerRadius="5dp"
+            app:trackThickness="14dp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Waiting for payment confirmation.."
+            android:textColor="@color/tia"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress_circular"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>

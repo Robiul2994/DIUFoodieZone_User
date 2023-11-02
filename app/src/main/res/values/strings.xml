@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DIU Foodie Zone</string>
+    <string name="server_client_id">676987649475-q71ie96dmlr1dpl6vegoeuvpqgjiraqd.apps.googleusercontent.com</string>
+
+    <string name="seller_amp_admin"><![CDATA[Seller & Admin]]></string>
+    <string name="or">or</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logo">logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">back</string>
+    <string name="registration">Registration</string>
+    <string name="food">food</string>
+    <string name="title_activity_user_main">UserMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="taha">৳</string>
+    <string name="mul">×</string>
+    <string name="cart">Cart</string>
+    <string name="find_food">Find Food</string>
+    <bool name="isDarkDisable">true</bool>
+</resources>

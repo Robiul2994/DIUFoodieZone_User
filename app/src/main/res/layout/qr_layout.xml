@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/whiteX"
+        android:layout_margin="10dp"
+        app:strokeWidth="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/shopNm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/tia"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginTop="16dp"
+                android:text="Merchant Payment QR Code"
+                android:textColor="@color/darkX"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo"
+                android:padding="10dp"
+                android:translationZ="2dp"
+                android:layout_marginBottom="-58dp"
+                android:src="@drawable/ic_1card"
+                />
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:strokeWidth="5dp"
+                app:strokeColor="@color/tia"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/qr"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/logo"
+                    />
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</LinearLayout>

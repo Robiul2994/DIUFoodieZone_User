@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FoodieZone" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/tia</item>
+        <item name="colorPrimaryVariant">@color/tiaX</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:textViewStyle">@font/ubuntu_regular</item>
+        <item name="buttonStyle">@font/ubuntu_regular</item>
+
+
+
+    </style>
+
+    <style name="Theme.FoodieZone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FoodieZone.windowTranslucentStatus" parent="Theme.FoodieZone">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Theme.FoodieZone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FoodieZone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

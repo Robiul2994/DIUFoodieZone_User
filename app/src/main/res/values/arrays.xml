@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buildings">
+        <item>AB-1</item>
+        <item>AB-3</item>
+        <item>AB-4</item>
+        <item>Faculty Residence</item>
+        <item>Rowshan Ara SG</item>
+        <item>Yunus Khan SG 1</item>
+        <item>Yunus Khan SG 2</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>Food Court</item>
+        <item>Green Garden</item>
+        <item>Campus Front</item>
+        <item>Campus Side</item>
+    </string-array>
+    <string-array name="floor">
+        <item>Basement</item>
+        <item>Ground Floor</item>
+        <item>1st Floor</item>
+        <item>2nd Floor</item>
+        <item>3rd Floor</item>
+        <item>4th Floor</item>
+        <item>5th Floor</item>
+        <item>6th Floor</item>
+        <item>7th Floor</item>
+        <item>8th Floor</item>
+        <item>9th Floor</item>
+        <item>10th Floor</item>
+        <item>11th Floor</item>
+        <item>12th Floor</item>
+        <item>13th Floor</item>
+        <item>14th Floor</item>
+    </string-array>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.order.AddressFragment"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:hint="--Select Building--"
+        app:boxBackgroundColor="@color/whiteX"
+        app:boxStrokeColor="?colorPrimary"
+        app:boxStrokeWidth="2dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/buildingNm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/buildings"
+            android:textColor="@color/grayX" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginBottom="26dp"
+        android:hint="--Select Floor--"
+        app:boxBackgroundColor="@color/whiteX"
+        app:boxStrokeColor="?colorPrimary"
+        app:boxStrokeWidth="2dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/floorNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/floor"
+            android:textColor="@color/grayX" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:translationY="-10dp"
+        android:hint="Room No."
+        app:boxBackgroundColor="@color/whiteX"
+        app:boxStrokeColor="?colorPrimary"
+        app:boxStrokeWidth="2dp"
+        app:placeholderText="xxx"
+        app:placeholderTextColor="@color/grayX"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/roomNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="14"
+            android:maxLines="1"
+            android:textColor="@color/grayX" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:translationY="-10dp"
+        android:hint="Phone No."
+        app:boxBackgroundColor="@color/whiteX"
+        app:boxStrokeColor="?colorPrimary"
+        app:boxStrokeWidth="2dp"
+        app:placeholderText="01xxx-xxxxxx"
+        app:placeholderTextColor="@color/grayX"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pnNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="14"
+            android:maxLines="1"
+            android:textColor="@color/grayX" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/btnUpdateLoc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_tia_bg"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:focusable="true"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:text="Update Info"
+            android:textColor="@color/whiteX"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

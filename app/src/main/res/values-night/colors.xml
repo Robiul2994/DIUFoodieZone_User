@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#EEEBEB</color>
+    <color name="grayX">#DDDDDD</color>
+    <color name="dark">#D5D5D5</color>
+    <color name="darkX">#DEDEDE</color>
+
+    <color name="white">#3A3737</color>
+    <color name="whiteX">#454545</color>
+    <color name="whiteY">#606060</color>
+
+    <color name="tia">#64AF99</color>
+    <color name="tiaX">#579F88</color>
+</resources>
